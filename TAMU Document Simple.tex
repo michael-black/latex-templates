@@ -1,0 +1,42 @@
+% Michael Black, Texas A&M University, Department of Agricultural Economics
+% Template for a simple LaTeX document having a more compact look
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{natbib}
+\bibliographystyle{apalike}
+\usepackage{lipsum}
+% Note, to include a LaTeX object (like output table), use:
+% \input{file_name.tex}
+% To include a graph or image, use:
+% \includegraphics[scale=0.5]{file_name.png}
+
+
+\title{Title}
+\author{Author}
+\date{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\maketitle
+
+\section*{Example} % delete * if you want numbered sections
+\lipsum
+\par \lipsum
+
+\section*{Example with footnote}
+Sample text\footnote{\tiny sample footnote}
+
+\section*{Example with subsection}
+\lipsum    
+  \subsection*{Subsection}
+    \lipsum
+    
+% Turn on when you have a .bib file in your directory
+% \bibliography{file_name.bib}
+
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
