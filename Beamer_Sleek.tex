@@ -1,0 +1,90 @@
+% Michael Black, Texas A&M University, Department of Agricultural Economics
+\documentclass{beamer}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{natbib}
+\usepackage{hyperref}
+\bibliographystyle{apalike}
+\usetheme{boxes}
+\usetheme[numbering=fraction]{metropolis}
+\usepackage{amsmath}
+\usepackage[caption=false]{subfig}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{colortbl}
+
+\definecolor{maroon}{RGB}{80,0,0}
+\definecolor{tamwhite}{RGB}{255,255,255}
+\definecolor{tamyellow}{RGB}{252,227,0}
+\definecolor{tamred}{RGB}{228,0,43}
+\definecolor{tamgrey}{RGB}{112,115,115}
+\definecolor{tamblack}{RGB}{51,44,44}
+
+\usefonttheme{professionalfonts}   % required for mathspec
+\usepackage{mathspec} \setsansfont[BoldFont={Fira Sans},
+Numbers={OldStyle}]{Fira Sans Light}
+\setmathsfont(Digits)[Numbers={Lining, Proportional}]{Fira
+Sans Light}
+
+\newfontfamily\robmon{Roboto Mono}
+\setbeamerfont{frametitle}{family=\robmon}
+\setbeamerfont{title}{family=\robmon}
+\setbeamerfont{subtitle}{family=\robmon}
+\setbeamerfont{author}{family=\robmon}
+\setbeamerfont{institute}{family=\robmon}
+\setbeamerfont{date}{family=\robmon}
+\setbeamerfont{section title}{family=\robmon}
+\setbeamerfont{standout}{family=\robmon}
+
+\setbeamercolor{title}{fg = tamblack, bg = tamblack}
+\setbeamercolor{frametitle}{fg = tamwhite, bg = tamblack}
+\setbeamercolor{structure}{fg = tamgrey, bg = tamyellow}
+
+\setbeamercolor{palette primary}{bg=tamblack,fg=tamwhite}
+\setbeamercolor{normal text}{fg=tamblack}
+\setbeamercolor{progress bar}{use=palette primary,fg=red}
+\setbeamercolor{frametitle}{use=palette primary,fg=tamwhite}
+
+\title{Title}
+\author{Author 1\inst{1}}
+\institute[]{
+    \inst{1}%
+    Department of Something\\
+    University of Somewhere
+}
+\date{}
+
+%% Include logo on title slide:
+%\titlegraphic{\begin{flushright} \vspace{7cm} \includegraphics[width=1cm]{agec.png}  \end{flushright}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain, noframenumbering]
+  \titlepage
+\end{frame}
+
+\begin{frame}[standout, noframenumbering]{} 
+Standout slide
+\end{frame}
+
+\begin{frame}{Slide title}
+Normal slide
+$$a^2 + b^2 = c^2$$
+\begin{itemize}
+	\item List item
+	\item List item
+\end{itemize}
+\end{frame}
+
+%% Bibliography slide: need .bib file
+% \begin{frame}
+% \tiny
+% 	\bibliography{bib.bib}
+% \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
